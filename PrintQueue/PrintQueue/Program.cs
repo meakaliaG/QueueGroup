@@ -19,11 +19,11 @@ class Program
         Console.WriteLine("Welcome to the Print Queue!");
         string userInput = "";
 
+        displayOptions();
+
         while (userInput.ToLower() != "quit")
         {
-            Console.WriteLine("What would you like to do?");
-            Console.WriteLine("Options:\n- 'add' -Add a document to the print queue.\n- 'print' -Print the next document in the queue.\n- 'view' -View the current queue status.\n-'remove' -Remove a specific document from the queue.\n-'Quit' - End program.");
-            Console.WriteLine("Please enter your choice: ");
+
             userInput = Console.ReadLine();
 
             userInput = userInput.ToLower();
@@ -47,6 +47,10 @@ class Program
             else if (userInput == "quit")
             {
                 Console.WriteLine("Exiting the program.");
+            }
+            else if (userInput == "options")
+            {
+                displayOptions();
             }
             else
             {
@@ -127,6 +131,12 @@ class Program
         while (printQueue.Count > 0)
         {
             Console.WriteLine($"Printing: {printQueue.Dequeue()}");
+        }
+        static void displayOptions()
+        {
+            Console.WriteLine("What would you like to do?");
+            Console.WriteLine("Options:\n- 'add' -Add a document to the print queue.\n- 'print' -Print the next document in the queue.\n- 'view' -View the current queue status.\n-'remove' -Remove a specific document from the queue.\n-'Quit' - End program.");
+            Console.WriteLine("Please enter your choice: ");
         }
     }
 }
