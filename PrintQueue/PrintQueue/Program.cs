@@ -154,7 +154,7 @@ class Program
         static void DisplayOptions()
         {
             Console.WriteLine("What would you like to do?");
-            Console.WriteLine("Options:\n- 'add' -Add a document to the print queue.\n- 'print' -Print the next document in the queue.\n- 'view' -View the current queue status.\n-'remove' -Remove a specific document from the queue.\n-'Quit' - End program.");
+            Console.WriteLine("Options:\n- 'add' - Add a document to the print queue.\n- 'print' - Print the next document in the queue.\n- 'view' - View the current queue status.\n- 'remove' - Remove a specific document from the queue.\n- 'quit' - End program. \n- 'options' - View these options again.");
             Console.WriteLine("Please enter your choice: ");
         }
     }
