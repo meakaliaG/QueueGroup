@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PrintQueue")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e97caf6a52dcea5590d9056cd21883cc0b25a76")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c871e98fe69ec39ccb56475d33b9d7b0150644be")]
 [assembly: System.Reflection.AssemblyProductAttribute("PrintQueue")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PrintQueue")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

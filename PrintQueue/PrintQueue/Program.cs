@@ -10,8 +10,6 @@ class Program
 
     static void Main()
     {
-
-
         // Add documents to print queue
         printQueue.Enqueue("Document1");
         printQueue.Enqueue("Document2");
@@ -116,17 +114,20 @@ class Program
                 //executed if name passed in by user exists in the queue
                 if (printQueue.Contains(docToRemove))
                 {
-                    //creates a temporary queue
-                    //it mains order and is more efficient
+                    //creates a temporary queue - maintains order and is more efficient
                     Queue<string> tempQueue = new Queue<string>();
+                    //while printQueue's length is greater than 0
                     while (printQueue.Count > 0)
                     {
+                        //take the first element in printQueue
                         string doc = printQueue.Dequeue();
+                        //if the current element (doc) does not equal the doc the user wants to remove, add it to the tempQueue
                         if (doc != docToRemove)
                         {
                             tempQueue.Enqueue(doc);
                         }
                     }
+                    //assign tempQueue to printQueue
                     printQueue = tempQueue;
                     Console.WriteLine($"Document '{docToRemove}' removed.");
                 }
