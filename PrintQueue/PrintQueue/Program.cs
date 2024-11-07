@@ -17,16 +17,21 @@ class Program
         printQueue.Enqueue("Document2");
         printQueue.Enqueue("Document3");
 
+        // Begin communication with the user
         Console.WriteLine("Welcome to the Print Queue!");
         string userInput = "";
 
+        // Calls function that writes display options to console for user to view
         displayOptions();
 
+
+        // While the user is working in the program and has not yet quit
         while (userInput.ToLower() != "quit")
         {
-
+            // Read user input
             userInput = Console.ReadLine();
 
+            // Make user input lowercase so that the user input doesn't need to be case sensitive
             userInput = userInput.ToLower();
 
             if (userInput == "add")
@@ -59,6 +64,8 @@ class Program
             }
 
         }
+
+        // Add a document to the Queue using Enqueue()
         static void AddDoc()
         {
             Console.WriteLine("Enter the name of the document to add: ");
@@ -67,6 +74,7 @@ class Program
             Console.WriteLine($"Document '{doc}' added to the queue.");
         }
 
+        // Remove a document from the Queue using Dequeue()
         static void PrintDoc()
         {
             if (printQueue.Count > 0)
@@ -80,6 +88,7 @@ class Program
             }
         }
 
+        // View the elements in the Queue by printing them to the console
         static void ViewQueue()
         {
             Console.WriteLine("Current Print Queue:");
@@ -96,6 +105,7 @@ class Program
             }
         }
 
+        // Remove a specific document from queue base on user input using Dequeue()
         static void RemoveDoc()
         {
             if (printQueue.Count > 0)
@@ -138,6 +148,8 @@ class Program
         {
             Console.WriteLine($"Printing: {printQueue.Dequeue()}");
         }
+
+        // Displays the options to the user when requested
         static void displayOptions()
         {
             Console.WriteLine("What would you like to do?");
