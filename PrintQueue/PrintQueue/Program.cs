@@ -22,7 +22,7 @@ class Program
         string userInput = "";
 
         // Calls function that writes display options to console for user to view
-        displayOptions();
+        DisplayOptions();
 
 
         // While the user is working in the program and has not yet quit
@@ -56,7 +56,7 @@ class Program
             }
             else if (userInput == "options")
             {
-                displayOptions();
+                DisplayOptions();
             }
             else
             {
@@ -150,7 +150,7 @@ class Program
         }
 
         // Displays the options to the user when requested
-        static void displayOptions()
+        static void DisplayOptions()
         {
             Console.WriteLine("What would you like to do?");
             Console.WriteLine("Options:\n- 'add' -Add a document to the print queue.\n- 'print' -Print the next document in the queue.\n- 'view' -View the current queue status.\n-'remove' -Remove a specific document from the queue.\n-'Quit' - End program.");
