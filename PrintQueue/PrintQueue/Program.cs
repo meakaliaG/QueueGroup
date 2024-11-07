@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-
-/*
+﻿/*
  * A queue structure makes the most sense for a printing simulation because it follows the "First in, First out" principle. This means that when a document is added to the queue, it will be placed at the back of the line. This ensures priority is followed. 
  * If a stack had been implemented in this program instead of a queue, the most recent document added would be printed before any documents that had been waiting. So if someone had to print multiple documents, it could take a very long time to print the first document they submitted. 
  */
@@ -107,8 +103,11 @@ class Program
                 Console.WriteLine("Enter the name of the document to remove: ");
                 string docToRemove = Console.ReadLine();
 
+                //executed if name passed in by user exists in the queue
                 if (printQueue.Contains(docToRemove))
                 {
+                    //creates a temporary queue
+                    //it mains order and is more efficient
                     Queue<string> tempQueue = new Queue<string>();
                     while (printQueue.Count > 0)
                     {
@@ -121,11 +120,13 @@ class Program
                     printQueue = tempQueue;
                     Console.WriteLine($"Document '{docToRemove}' removed.");
                 }
+                //executed if name passed in by user doesn't exist
                 else
                 {
                     Console.WriteLine($"Document '{docToRemove}' not found in print queue.");
                 }
             }
+            //executed if printQueue is 0
             else
             {
                 Console.WriteLine("The print queue is empty.");
