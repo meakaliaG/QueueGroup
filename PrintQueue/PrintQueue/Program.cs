@@ -56,7 +56,7 @@ class Program
             {
                 DisplayOptions();
             }
-            else
+            else // Run when no input is recieved 
             {
                 Console.WriteLine("Invalid option. Please try again.");
             }
