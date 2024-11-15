@@ -2,7 +2,12 @@
  * A queue structure makes the most sense for a printing simulation because it follows the "First in, First out" principle. This means that when a document is added to the queue, it will be placed at the back of the line. This ensures priority is followed. 
  * If a stack had been implemented in this program instead of a queue, the most recent document added would be printed before any documents that had been waiting. So if someone had to print multiple documents, it could take a very long time to print the first document they submitted. 
  */
-
+/*
+Meakalia: in charge of main structure
+Olivia: in charge of error handling
+Jacob: in charge of thought out commenting
+lennon: in charge of maintaing brainstorm file
+*/
 class Program
 {
     // Print Queue
