@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\olivi\\Documents\\GitHub\\QueueGroup\\PrintQueue\\PrintQueue\\PrintQueue.csproj": {}
+    "Z:\\IGMProfile\\Desktop\\201\\QueueGroup\\PrintQueue\\PrintQueue\\PrintQueue.csproj": {}
   },
   "projects": {
-    "C:\\Users\\olivi\\Documents\\GitHub\\QueueGroup\\PrintQueue\\PrintQueue\\PrintQueue.csproj": {
+    "Z:\\IGMProfile\\Desktop\\201\\QueueGroup\\PrintQueue\\PrintQueue\\PrintQueue.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\olivi\\Documents\\GitHub\\QueueGroup\\PrintQueue\\PrintQueue\\PrintQueue.csproj",
+        "projectUniqueName": "Z:\\IGMProfile\\Desktop\\201\\QueueGroup\\PrintQueue\\PrintQueue\\PrintQueue.csproj",
         "projectName": "PrintQueue",
-        "projectPath": "C:\\Users\\olivi\\Documents\\GitHub\\QueueGroup\\PrintQueue\\PrintQueue\\PrintQueue.csproj",
-        "packagesPath": "C:\\Users\\olivi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\olivi\\Documents\\GitHub\\QueueGroup\\PrintQueue\\PrintQueue\\obj\\",
+        "projectPath": "Z:\\IGMProfile\\Desktop\\201\\QueueGroup\\PrintQueue\\PrintQueue\\PrintQueue.csproj",
+        "packagesPath": "D:\\Profiles\\jrj8250\\.nuget\\packages\\",
+        "outputPath": "Z:\\IGMProfile\\Desktop\\201\\QueueGroup\\PrintQueue\\PrintQueue\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\olivi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "Z:\\IGMProfile\\AppData\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

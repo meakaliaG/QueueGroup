@@ -1,6 +1,7 @@
 ﻿/*
  * A queue structure makes the most sense for a printing simulation because it follows the "First in, First out" principle. This means that when a document is added to the queue, it will be placed at the back of the line. This ensures priority is followed. 
- * If a stack had been implemented in this program instead of a queue, the most recent document added would be printed before any documents that had been waiting. So if someone had to print multiple documents, it could take a very long time to print the first document they submitted. 
+ * If a stack had been implemented in this program instead of a queue, the most recent document added would be printed before any documents that had been waiting. So if someone had to print multiple documents, it could take a very long time to print the first document they submitted.
+ * Using a queue ensures that the document that was sent to print first, is the document that will print first and people can't skip in line to have their own documents printed first.
  */
 /*
 Meakalia: in charge of main structure
@@ -22,6 +23,7 @@ class Program
 
         // Begin communication with the user
         Console.WriteLine("Welcome to the Print Queue!");
+        // Stores user unput throughout the program
         string userInput = "";
 
         // Calls function that writes display options to console for user to view
@@ -108,7 +110,7 @@ class Program
             }
         }
 
-        // Remove a specific document from queue base on user input using Dequeue()
+        // Remove a specific document from queue based on user input using Dequeue()
         static void RemoveDoc()
         {
             if (printQueue.Count > 0)
@@ -149,18 +151,21 @@ class Program
             }
         } 
 
-        Console.WriteLine("Print Queue:");
-        while (printQueue.Count > 0)
-        {
-            Console.WriteLine($"Printing: {printQueue.Dequeue()}");
-        }
-
-        // Displays the options to the user when requested
+        // Displays the user options to the user when requested
         static void DisplayOptions()
         {
             Console.WriteLine("What would you like to do?");
             Console.WriteLine("Options:\n- 'add' - Add a document to the print queue.\n- 'print' - Print the next document in the queue.\n- 'view' - View the current queue status.\n- 'remove' - Remove a specific document from the queue.\n- 'quit' - End program. \n- 'options' - View these options again.");
             Console.WriteLine("Please enter your choice: ");
         }
+
+        // After the program is quit, the print queue is displayed
+        ViewQueue();
+        // I added the line above and commented out the 4 lines below. Does this make sense or am I missing something?
+        //Console.WriteLine("Print Queue:");
+        //while (printQueue.Count > 0)
+        //{
+        //    Console.WriteLine($"Printing: {printQueue.Dequeue()}");
+        //}
     }
 }
