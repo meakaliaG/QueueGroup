@@ -161,11 +161,5 @@ class Program
 
         // After the program is quit, the print queue is displayed
         ViewQueue();
-        // I added the line above and commented out the 4 lines below. Does this make sense or am I missing something?
-        //Console.WriteLine("Print Queue:");
-        //while (printQueue.Count > 0)
-        //{
-        //    Console.WriteLine($"Printing: {printQueue.Dequeue()}");
-        //}
     }
 }
